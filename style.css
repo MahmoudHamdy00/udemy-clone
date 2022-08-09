@@ -1,0 +1,137 @@
+body{
+    margin-top: 30px;
+    /* Add a top margin to avoid content overlay */
+}
+ul.nav {
+    list-style-type: none;
+    background-color: rgb(191, 191, 191);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin: 0%;
+    padding: 0% ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li  {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-size: 17px;
+    border-right: 1px solid #bbb;
+}
+
+ul.nav li:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+.nav-search  {
+    width:32rem;
+}
+.nav-search input{
+    width:26rem;
+}
+.nav-search button {
+    width:4rem;
+}
+.offer-div{
+    display: flex;
+    width: 100%;
+}
+.offer-card{
+    width: 350px;
+     position: absolute; 
+     top: 200px; 
+    left: 300px; 
+    background-color: white;
+
+}
+.alarm-img {
+    width:100%;
+    height: 400px;
+}
+.courses-broad{
+    margin-bottom: 20px;
+}
+.courses-container{
+    border: solid 1px black;
+    padding: 20px 50px;
+}
+.courses-container a {
+    border: solid 1px black;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.courses-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.course-card{
+    width: 300px;
+    margin: 7px;
+}
+.python{
+    width: 60%;
+    margin: 10px;
+}
+main{
+    width: 75%;
+    margin: auto;
+}
+@media screen and (max-width: 900px) {
+    ul.nav {
+      flex-direction: column;
+    }
+    ul.nav li {
+        width: 100%;
+    }
+    ul.nav a {
+        width: 100%;
+    }
+    .nav-search {
+        width: 100%;
+    }
+    
+    .nav-search input {
+        width: 50%;
+    }
+    
+    .nav-search button {
+        width: 10%;
+    }
+    .alarm-img {
+        width: 100%;
+        height: 400px;
+    }
+    .offer-div {
+        flex-direction: column-reverse;
+
+    }
+    .courses-container {
+        width: 100%;
+        margin: auto;
+
+    }
+    .offer-card{
+        position: static;
+    }
+    .courses-cards {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        margin: 0px;
+    }
+}
